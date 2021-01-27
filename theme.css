@@ -1,0 +1,32 @@
+:root{
+    background:lightblue;
+}
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+@font-face{
+    font-family: 'Potta One';
+    src: url('./polices/PottaOne-Regular.ttf') format('truetype');
+}
+#theme-entete{
+    position:absolute;
+    top:1%;
+    right:1%;
+    display:flex;
+    flex-direction:column;
+    user-select:none;
+}
+#theme-entete a{
+    outline:none;
+}
+#theme-entete img{
+    height:60px;
+    margin-top:5px;
+}
+@media(max-width:800px){
+    #theme-entete{
+        flex-direction:row-reverse;
+    }
+}

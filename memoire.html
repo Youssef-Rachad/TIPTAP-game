@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>TIPTAP</title>
+        <link rel="stylesheet" href="theme.css">
+        <link rel="stylesheet" href="memoire.css">
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav id="theme-entete">
+            <a href="index.html">
+                <img src="./icone/Accueil.png" alt="ACCUEIL">
+            </a>
+            <a href="statistiques.html">
+                <img src="./icone/cerveau-stats.png" alt="STATS">
+            </a>
+            <a href="apropos.html">
+                <img src="./icone/apropos.png" alt="INFORMATION">
+            </a>
+            <a href="aide.html">
+                <img src="./icone/aide.png" alt="AIDE">
+            </a>
+            <a href="https://github.com/Youssef-Rachad/ics3u-projet" target="_blank">
+                <img src="./icone/github.png" alt="GITHUB">
+            </a>
+        </nav>
+        <!-- Jeu principal
+            Les tuiles sont affichées ici -->
+            <main id="jeu"></main>
+            <button id="btn-depart" class="btn-declenche"><span>Départ</span></button>
+            <!-- Les FENETRES ARRIVENT -->
+            <!-- FENETRE ENTREE -->
+            <section id="entree" class="fenetre">
+                <div class="fenetre-contenu">
+                    <div class="fenetre-entete">
+                        <h1>Entrer La Longueur</h1>
+                    </div>
+                    <div class="fenetre-corps">
+                        <button id="btn-moins">-</button>
+                        <span id="nombre">2</span>
+                        <button id="btn-plus">+</button>
+                    </div>
+                    <div class="fenetre-enpied">
+                        <button id="btn-go" class="btn-declenche"><span>Go</span></button>
+                    </div>
+                </div>
+            </section>
+            <!-- FENETRE no2 pour réussite -->
+            <section id="reussite" class="fenetre">
+                <div class="fenetre-contenu">
+                    <div id="reussite-entete"class="fenetre-entete">
+                    </div>
+                    <div id="reussite-corps"class="fenetre-corps">
+                    </div>
+                    <div id="reussite-enpied" class="fenetre-enpied">
+                        <button id="btn-continuer" class="btn-declenche"><span>Prochain Niveau</span></button>
+                    </div>
+                </div>
+            </section>
+            <!-- FENETRE no3 pour echec -->
+            <section id="echec" class="fenetre">
+                <div class="fenetre-contenu">
+                    <div id="echec-entete"class="fenetre-entete">
+                    </div>
+                    <div id="echec-corps"class="fenetre-corps">
+                    </div>
+                    <div id="echec-enpied" class="fenetre-enpied">
+                        <button id="btn-recommencer" class="btn-declenche"><span>Recommencer</span></button>
+                    </div>
+                </div>
+            </section>
+            <script src="memoire.js"></script>
+    </body>
+</html>
